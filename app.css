@@ -1,0 +1,180 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Consolas, 'Courier New', Courier, monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+body > .container {
+  width: 95%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.navbar {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.navbar a {
+  color: black;
+}
+
+.navbar .container {
+  width: 100%;
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .container .logo {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 22px;
+}
+
+.navbar .container .links a {
+  display: inline-block;
+  padding: 5px 10px;
+  border-bottom: 1px solid transparent;
+}
+
+.navbar .container .links a:hover {
+  color: dodgerblue;
+  border-bottom: 1px solid dodgerblue;
+}
+
+.navbar .container .logo a:hover,
+.navbar .container .social a:hover {
+  color: dodgerblue;
+}
+
+.section {
+  margin-bottom: 50px;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section > .title {
+  font-weight: normal;
+  font-size: 38px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.section article {
+  margin-bottom: 35px;
+}
+
+.section article .thumbnail {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section article .thumbnail img {
+  vertical-align: top;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.section article .content h2 {
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.section article .content h2 a {
+  color: dodgerblue;
+}
+
+.section article .content h2 a:hover {
+  text-decoration: underline;
+}
+
+
+.profile {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 90%;
+  max-width: 250px;
+}
+
+.profile .name {
+  font-weight: normal;
+  font-size: 28px;
+}
+
+.profile .profession {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.fields {
+  margin-bottom: 25px;
+}
+
+.fields > h2 {
+  margin-bottom: 10px;
+  color: dodgerblue;
+  font-weight: normal;
+}
+
+.fields article {
+  padding: 10px 5px;
+}
+
+.fields article .date {
+  color: gray;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  padding: 25px;
+}
+
+
+@media screen and (max-width: 800px) {
+  
+  .navbar .container .logo,
+  .navbar .container .links,
+  .navbar .container .social {
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+  }
+
+}
+
+@media (prefers-color-scheme: dark) {
+  
+  * {
+    color: white;
+  }
+
+  body {
+    background-color: rgba(0, 0, 0, 0.90);
+  }
+
+  .navbar .container .logo a,
+  .navbar .container .links a {
+    color: white;
+  }
+
+}
